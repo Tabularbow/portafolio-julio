@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio académico y proyectos de Julio David Santos Pineda, estudiante de Ciencias de la Computación.">
+  <title>Julio Santos | Portafolio</title>
+  <!-- Bootstrap 5: framework CSS utilizado para la actividad -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root { --fondo:#0b1020; --panel:#121a2e; --texto:#edf2ff; --suave:#aab6d3; --acento:#75e0c1; }
+    * { scroll-behavior:smooth; }
+    body { margin:0; background:var(--fondo); color:var(--texto); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; }
+    .navbar { background:rgba(11,16,32,.94); border-bottom:1px solid #25304a; }
+    .navbar-brand { color:var(--acento)!important; font-weight:800; letter-spacing:.5px; }
+    .nav-link { color:#d7def0!important; }
+    .nav-link:hover { color:var(--acento)!important; }
+    .hero { min-height:78vh; display:flex; align-items:center; padding:100px 0 70px; background:radial-gradient(circle at 80% 20%,#1b3450 0,transparent 35%),linear-gradient(135deg,#0b1020,#101b31); }
+    .eyebrow { color:var(--acento); text-transform:uppercase; letter-spacing:2px; font-size:.78rem; font-weight:700; }
+    h1 { font-size:clamp(2.6rem,7vw,5rem); line-height:1.05; font-weight:850; letter-spacing:-2px; }
+    .text-soft { color:var(--suave); }
+    .accent { color:var(--acento); }
+    .btn-accent { background:var(--acento); color:#07131a; border:0; font-weight:750; padding:12px 20px; }
+    .btn-accent:hover { background:#a0f2dc; color:#07131a; }
+    .btn-outline-light { padding:11px 19px; }
+    .section { padding:85px 0; }
+    .section-title { font-weight:800; letter-spacing:-1px; margin-bottom:12px; }
+    .panel { background:var(--panel); border:1px solid #27334d; border-radius:18px; padding:26px; height:100%; }
+    .tag { display:inline-block; color:var(--acento); background:#193b3b; border:1px solid #28605a; border-radius:30px; padding:6px 12px; font-size:.82rem; margin:4px 4px 0 0; }
+    .project-number { color:var(--acento); font-size:.8rem; font-weight:800; letter-spacing:1px; }
+    .project-card { transition:transform .2s,border-color .2s; }
+    .project-card:hover { transform:translateY(-5px); border-color:var(--acento); }
+    .contact-link { color:var(--acento); text-decoration:none; }
+    .contact-link:hover { text-decoration:underline; }
+    footer { border-top:1px solid #25304a; color:var(--suave); padding:25px 0; }
+    @media (max-width:576px) { .hero { min-height:70vh; } .section { padding:65px 0; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">JS<span class="text-light">.</span></a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-8">
+          <p class="eyebrow mb-3">Estudiante de Ciencias de la Computación</p>
+          <h1>Hola, soy <span class="accent">Julio Santos.</span></h1>
+          <p class="text-soft fs-5 mt-4 mb-4" style="max-width:650px">Me interesa la tecnología y el desarrollo de soluciones digitales. Este espacio reúne información sobre mí, mis habilidades y algunos proyectos académicos.</p>
+          <a class="btn btn-accent me-2 mb-2" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-outline-light mb-2" href="#contacto">Contactarme</a>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div class="mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width:210px;height:210px;background:linear-gradient(145deg,#75e0c1,#345d79);color:#0b1020;font-size:4.5rem;font-weight:900;box-shadow:0 0 0 14px #17253b">JS</div>
+          <p class="text-soft mt-4 mb-0">Aprender · Crear · Mejorar</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-4"><p class="eyebrow">Un poco sobre mí</p><h2 class="section-title display-5">Conociendo mi camino.</h2></div>
+          <div class="col-lg-8"><div class="panel"><p class="text-soft mb-0">Mi nombre es Julio David Santos Pineda y estudio Ciencias de la Computación en la Universidad Católica de Honduras. Me considero una persona atenta y proactiva. Me gusta aprender sobre programación, conocer nuevas herramientas y poner en práctica lo aprendido en trabajos y proyectos. Mi meta es seguir desarrollando mis habilidades y conseguir una oportunidad laboral en el área de programación.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades" style="background:#0e1628">
+      <div class="container">
+        <p class="eyebrow">Lo que voy aprendiendo</p><h2 class="section-title display-5 mb-4">Habilidades e intereses</h2>
+        <div class="row g-3">
+          <div class="col-md-4"><div class="panel"><h3 class="h5 accent">Desarrollo web</h3><p class="text-soft mb-0">Creación de páginas con HTML, CSS, JavaScript y frameworks como Bootstrap.</p></div></div>
+          <div class="col-md-4"><div class="panel"><h3 class="h5 accent">Programación</h3><p class="text-soft mb-0">Práctica de lógica, solución de problemas y desarrollo de aplicaciones.</p></div></div>
+          <div class="col-md-4"><div class="panel"><h3 class="h5 accent">Bases de datos</h3><p class="text-soft mb-0">Diseño, consultas y organización de información utilizando SQL.</p></div></div>
+        </div>
+        <div class="mt-4"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">SQL</span><span class="tag">Python</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="container">
+        <p class="eyebrow">Práctica y aprendizaje</p><h2 class="section-title display-5 mb-4">Proyectos académicos</h2>
+        <div class="row g-4">
+          <div class="col-md-4"><article class="panel project-card"><span class="project-number">PROYECTO 01</span><h3 class="h4 mt-3">Sitios web</h3><p class="text-soft">Diseño de páginas web con secciones informativas, navegación y estilos adaptables.</p><span class="tag">HTML</span><span class="tag">CSS</span></article></div>
+          <div class="col-md-4"><article class="panel project-card"><span class="project-number">PROYECTO 02</span><h3 class="h4 mt-3">Aplicación móvil</h3><p class="text-soft">Práctica de desarrollo Android para organizar información y mostrar datos al usuario.</p><span class="tag">Android</span><span class="tag">Kotlin</span></article></div>
+          <div class="col-md-4"><article class="panel project-card"><span class="project-number">PROYECTO 03</span><h3 class="h4 mt-3">Base de datos</h3><p class="text-soft">Ejercicios de creación de tablas, relaciones y consultas para administrar información.</p><span class="tag">SQL</span><span class="tag">Datos</span></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto" style="background:#0e1628">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7"><p class="eyebrow">Hablemos</p><h2 class="section-title display-5">¿Tienes una idea o proyecto?</h2><p class="text-soft fs-5">Estoy interesado en seguir aprendiendo y conocer nuevas oportunidades relacionadas con la tecnología.</p></div>
+          <div class="col-lg-5"><div class="panel"><p class="mb-3"><strong>Nombre</strong><br><span class="text-soft">Julio David Santos Pineda</span></p><p class="mb-3"><strong>Ubicación</strong><br><span class="text-soft">Siguatepeque, Comayagua, Honduras</span></p><p class="mb-0"><strong>GitHub</strong><br><a class="contact-link" href="https://github.com/" target="_blank" rel="noopener">Visitar GitHub</a></p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><span>© <span id="anio"></span> Julio Santos</span><span>Hecho con Bootstrap 5</span></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('anio').textContent = new Date().getFullYear();</script>
+</body>
+</html>
